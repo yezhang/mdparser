@@ -7,8 +7,21 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gen": "antlr4 -Xexact-output-dir -o src/parser src/grammar/*.g4",
+    "test": "jest"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "yezhang989@163.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "0x": "^5.6.0",
+    "jest": "^29.6.2",
+    "markdown-it": "^13.0.1",
+    "remarkable": "^2.0.1",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "antlr4": "^4.13.0"
+  }
 }

@@ -12,10 +12,12 @@ import { default as CharStreams } from './CharStreams.js';
 import { default as Utils } from './utils/index.js';
 
 import Token from './Token.js';
+import TokenSource from './TokenSource.js';
 import CommonToken from './CommonToken.js';
 import InputStream from './InputStream.js';
 import CharStream from './InputStream.js';
 import FileStream from './FileStream.js';
+import CommonTokenFactory from './CommonTokenFactory.js';
 import CommonTokenStream from './CommonTokenStream.js';
 import Lexer from './Lexer.js';
 import Parser from './Parser.js';
@@ -47,12 +49,12 @@ import arrayToString from "./utils/arrayToString.js"
 import TokenStreamRewriter from './TokenStreamRewriter.js';
 
 export default {
-    atn, dfa, context, misc, tree, error, Token, CommonToken, CharStreams, CharStream, InputStream, FileStream, CommonTokenStream, Lexer, Parser,
+    atn, dfa, context, misc, tree, error, Token, TokenSource, CommonToken, CharStreams, CharStream, InputStream, FileStream, CommonTokenFactory, CommonTokenStream, Lexer, Parser,
     ParserRuleContext, Interval, IntervalSet, LL1Analyzer, Utils, TokenStreamRewriter
 }
 
 export {
-    Token, CommonToken, CharStreams, CharStream, InputStream, FileStream, CommonTokenStream, Lexer, Parser,
+    Token, TokenSource, CommonToken, CharStreams, CharStream, InputStream, FileStream, CommonTokenFactory, CommonTokenStream, Lexer, Parser,
     RuleNode, TerminalNode, ParseTreeWalker, RuleContext, ParserRuleContext, Interval, IntervalSet,
     PredictionMode, LL1Analyzer, ParseTreeListener, ParseTreeVisitor, ATN, ATNDeserializer, PredictionContextCache, LexerATNSimulator, ParserATNSimulator, DFA,
     RecognitionException, NoViableAltException, FailedPredicateException, ErrorListener, DiagnosticErrorListener, BailErrorStrategy,
